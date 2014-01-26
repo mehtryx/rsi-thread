@@ -4,7 +4,7 @@ Module Name: RSI_THREADS
 Module URI: http://github.com/mehtryx/rsi-threads
 Description: 
 Author: mehtryx
-Version: 0.1.0
+Version: 0.1.1
 Author URI: http://github.com/mehtryx
 License: MIT
 */
@@ -37,7 +37,7 @@ class RSI_THREADS {
 		if ( $limit > 20 )
 			$limit = 5;
 		
-		for ( $request = 1; $request < $limit; $request++ ) {
+		for ( $request = 1; $request <= $limit; $request++ ) {
 			$raw_html = $this->retrieve_html( $url );		
 			// url failed to return content, return false and do not continue as this is a critical error.
 			if ( $raw_html === false )

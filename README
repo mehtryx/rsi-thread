@@ -1,7 +1,7 @@
 === RSI-THREAD ===
 Contributors: mehtryx
 Tested up to: php 5.4.17
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: MIT
 License URI: https://github.com/mehtryx/rsi-threads/blob/master/LICENSE
 
@@ -24,3 +24,10 @@ Example usage:
 
 $rsi_threads = new RSI_THREADS();
 $imperium_thread = $rsi_threads->search_discussions( '16594' ); // 16594 is discussion were tracking
+
+= 0.1.1 =
+
+* Added cron folder with the job to execute on this class, will use this for future cron job examples as well
+* Added php html fragments for status results
+* Fixed loop to include $limit, was running one cycle short.
+ 
