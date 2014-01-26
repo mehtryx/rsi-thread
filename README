@@ -1,0 +1,26 @@
+=== RSI-THREAD ===
+Contributors: mehtryx
+Tested up to: php 5.4.17
+Stable tag: 0.1.0
+License: MIT
+License URI: https://github.com/mehtryx/rsi-threads/blob/master/LICENSE
+
+== Description ==
+
+Supports searching RSI forum listings for thread ID's and returning the position count.
+
+== Installation ==
+
+Import the module where needed.
+
+== Changelog ==
+
+= 0.1.0 =
+
+* Initial creation of class, basic functions
+
+Example usage:
+// Import the module into the code you are using, then create an instance of the class RSI_THREADS, once done,  you can invoke the search_discussions call with the thread id
+
+$rsi_threads = new RSI_THREADS();
+$imperium_thread = $rsi_threads->search_discussions( '16594' ); // 16594 is discussion were tracking
